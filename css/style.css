@@ -1,11 +1,12 @@
 body {
-    background-image: url('holly.png');
+    background-image: url('holly (2).png');
     background-repeat: repeat;   /* repeats in all directions */
-    color: #00aaff;
+    color: #ff00ff;
+    background-color: wheat;
     font-family: "Comic Sans MS", "Courier New", cursive;
     text-align: center;
-    margin: 0;
-    padding: 0;
+
+ 
 }
 
 .container {
@@ -13,6 +14,7 @@ body {
     margin: 30px auto;
     border: 4px double #ff00ff;
     box-shadow: 5px 5px #00ffff;
+    background-color: white;
     padding: 20px;
 }
 
@@ -39,6 +41,7 @@ marquee {
 {
     margin-top: 20px;
 }
+
 /* === NAVBAR === */
 .navbar {
     background-color: #0000ff;
@@ -107,27 +110,46 @@ marquee {
 /* INDEX.HTML */
 .song-title
 {
-    color: #ff00ff;
+    color: rgb(191, 0, 0);
     font-family: 'Foremost', sans-serif;
     font-size: 40px;
-    margin-bottom: 5px;
-
-
-
+    background-color: white;
+    width: 594px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid green;
+    line-height: 70px;
+    margin-bottom: 10px;
 
 }
+
+
 
 .SOTD
 {
     font-family: 'Brush Script MT';
     font-size: 50px;
-    padding: 10px;
+    color: green;
+    background-color: white;
+    width: 594px;
+    line-height: 100px;
+    margin: -15px auto 0 auto;  /* top | left/right | bottom */
+    border: 3px solid green;
+
+
+
 }
 
 .songwriter
 {
     font-family: 'Foremost', sans-serif;
-    padding: 5px;
+    background-color: white;
+    width: 596px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    color: green;
+    
 }
 
 @font-face
