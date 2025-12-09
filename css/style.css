@@ -78,7 +78,6 @@ marquee {
     cursor: grabbing;
 }
 
-/* PHOTOS */
 
 /* POEMS */
 .poem-list
@@ -113,7 +112,7 @@ marquee {
 /* INDEX.HTML */
 .song-title
 {
-    color: black;
+    color: red;
     font-family: 'Foremost', sans-serif;
     font-size: 40px;
     background-color: white;
