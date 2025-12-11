@@ -112,7 +112,7 @@ marquee {
 /* INDEX.HTML */
 .song-title
 {
-    color: red;
+    color: rgb(244, 156, 47);
     font-family: 'Foremost', sans-serif;
     font-size: 40px;
     background-color: white;
