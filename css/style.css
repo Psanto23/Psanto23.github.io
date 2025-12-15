@@ -99,13 +99,30 @@ marquee {
 {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    width: 400px;
+    border: 3px solid black;
 
 }
 
+b{
+    font-size: large;
+}
 .poem-title
 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight:bolder;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 40px;
+    width: 450px;
+    
+
+    
     
 }
 
