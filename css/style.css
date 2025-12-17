@@ -129,7 +129,7 @@ b{
 /* INDEX.HTML */
 .song-title
 {
-    color: green;
+    color: red;
     font-family: 'Foremost', sans-serif;
     font-size: 40px;
     background-color: white;
@@ -175,4 +175,38 @@ b{
 {
     font-family: 'Foremost';
     src:  url('../ForemostRegular.ttf');
+}
+
+/* PHOTOS */
+.photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Each item */
+.photos figure {
+  margin: 0;
+  background: #f7f7f7;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+/* Make all images the same height and crop nicely */
+.photos img {
+  width: 100%;
+  height: 200px;     /* you can adjust this */
+  object-fit: cover; /* key line: keeps things neat */
+  display: block;
+}
+
+/* Captions */
+.photos figcaption {
+  font-size: 0.9rem;
+  padding: 8px 10px;
+  color: #333;
 }
