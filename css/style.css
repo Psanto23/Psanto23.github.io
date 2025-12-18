@@ -189,11 +189,11 @@ b{
 .photos figure {
   margin: 0;
   background: #f7f7f7;
-  border-radius: 8px;
+  
   overflow: hidden;
   text-align: center;
   padding-bottom: 10px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  
 }
 
 /* Make all images the same height and crop nicely */
@@ -206,6 +206,7 @@ b{
 
 /* Captions */
 .photos figcaption {
+  font-family: 'Times New Roman', Times, serif;
   font-size: 0.9rem;
   padding: 8px 10px;
   color: #333;
