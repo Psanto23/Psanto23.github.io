@@ -1,8 +1,8 @@
 body {
-    background-image: url('holly (2).png');
+    background-image: url('snowflake.png');
     background-repeat: repeat;   /* repeats in all directions */
     color: #ff00ff;
-    background-color: wheat;
+    background-color: white;
     font-family: "Comic Sans MS", "Courier New", cursive;
     text-align: center;
 
@@ -129,14 +129,14 @@ b{
 /* INDEX.HTML */
 .song-title
 {
-    color: red;
+    color: black;
     font-family: 'Foremost', sans-serif;
     font-size: 40px;
     background-color: white;
     width: 594px;
     margin-left: auto;
     margin-right: auto;
-    border: 3px solid green;
+    border: 3px solid black;
     line-height: 70px;
     margin-bottom: 10px;
 
@@ -148,12 +148,12 @@ b{
 {
     font-family: 'Brush Script MT';
     font-size: 50px;
-    color: green;
+    color: black;
     background-color: white;
     width: 594px;
     line-height: 100px;
     margin: -15px auto 0 auto;  /* top | left/right | bottom */
-    border: 3px solid green;
+    border: 3px solid black;
 
 
 
@@ -167,7 +167,7 @@ b{
     margin-left: auto;
     margin-right: auto;
     border: 2px solid black;
-    color: green;
+    color: black;
     
 }
 
