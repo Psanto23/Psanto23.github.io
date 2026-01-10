@@ -1,0 +1,267 @@
+body {
+    background-image: url('snowflake.png');
+    background-repeat: repeat;   /* repeats in all directions */
+    color: #ff00ff;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.container {
+    width: 1200px;
+    margin: 30px auto;
+    border: 4px double #ff00ff;
+    box-shadow: 5px 5px #00ffff;
+    background-color: white;
+    padding: 20px;
+}
+
+a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.navbar {
+    background-color: #0000ff;
+    border: 3px outset #ff00ff;
+    padding: 12px;
+    height: 25px;
+
+    
+}
+
+.nav-button {
+    background-color: #ffff00;
+    color: #000;
+    border: 2px inset #000;
+    padding: 5px 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Comic Sans MS", sans-serif;
+    box-shadow: 2px 2px #00ffff;
+}
+
+.nav-button:hover {
+    background-color: #ff00ff;
+    color: #fff;
+    border: 2px outset #000;
+    cursor: grab;
+}
+.nav-button:active
+{
+    background-color: #ff00ff;
+    color: #fff;
+    border: 2px outset #000;
+    cursor: grabbing;
+}
+.title-bar {
+  background: linear-gradient(180deg, #000080 0%, #1084d0 100%);
+  color: #fff;
+  padding: 100px 8px;
+  font-weight: bold;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.title-icon {
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border: 1px solid #000;
+  
+}
+
+.content {
+  padding: 30px;
+}
+
+h1 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.question {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: #000;
+  color: #000;
+}
+
+.options {
+  margin-bottom: 30px;
+}
+
+.option {
+  margin: 8px 0;
+  padding: 8px 12px;
+  background: #fff;
+  border: 2px outset #dfdfdf;
+  cursor: pointer;
+  font-size: 13px;
+  color: #000;
+}
+
+.option:hover:not(.disabled) {
+  background: #e0e0e0;
+}
+
+.option:active:not(.disabled) {
+  border-style: inset;
+}
+
+.option.disabled {
+  cursor: not-allowed;
+  color: #808080;
+}
+
+.results {
+  display: none;
+  margin-top: 30px;
+}
+
+.results.show {
+  display: block;
+}
+
+.chart-area {
+  background: #fff;
+  border: 1px solid #000;
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 300px;
+  position: relative;
+}
+
+.y-axis {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  border-right: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 5px 20px 0;
+}
+
+.y-label {
+  font-size: 10px;
+  text-align: right;
+  color: #000;
+}
+
+.chart-bars {
+  display: flex;
+  gap: 30px;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 100%;
+  flex: 1;
+  margin-left: 40px;
+  border-bottom: 2px solid #000;
+}
+
+.bar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.bar-column {
+  width: 100%;
+  max-width: 80px;
+  background: #0066cc;
+  background-image: repeating-linear-gradient(
+    0deg,
+    #0066cc 0px,
+    #0066cc 3px,
+    #0055aa 3px,
+    #0055aa 4px
+  );
+  border: 1px solid #003366;
+  border-top: 2px solid #0088ff;
+  border-left: 2px solid #0088ff;
+  transition: height 1s ease-out;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.bar-value {
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #000;
+}
+
+.bar-label {
+  margin-top: 8px;
+  font-size: 11px;
+  text-align: center;
+  color: #000;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.stats-table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #000;
+}
+
+.stats-table th,
+.stats-table td {
+  border: 1px solid #000;
+  padding: 6px 10px;
+  text-align: left;
+  font-size: 12px;
+}
+
+.stats-table th {
+  background: #c0c0c0;
+  font-weight: bold;
+}
+
+.stats-table tr:nth-child(even) {
+  background: #f0f0f0;
+}
+
+.voted-message {
+  background: #ffffe0;
+  border: 1px solid #000;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #000;
+  display: none;
+}
+
+.voted-message.show {
+  display: block;
+}
+
+.total-votes {
+  margin-top: 15px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #000;
+}
